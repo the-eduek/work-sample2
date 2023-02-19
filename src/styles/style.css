@@ -1,0 +1,50 @@
+.success-message {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  padding: 0 1.5rem 5.125rem;
+}
+
+.success-message-wrap {
+  margin: auto 0 0;
+}
+
+.success-message__img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.success-message__desc {
+  text-align: center;
+}
+
+.success-message__desc h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  padding: 2rem 0 0.75rem;
+}
+
+.success-message__desc p {
+  color: var(--grey200);
+  line-height: 1.5;
+}
+
+.success-message__btn {
+  margin: auto 0 0;
+}
+
+.success-message__btn .btn {
+  background-color: var(--green100);
+  border: none;
+  border-radius: 2rem;
+  color: var(--white100);
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 400;
+  padding: 0.75rem 1rem;
+  width: 100%;
+}

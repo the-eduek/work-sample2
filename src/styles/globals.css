@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+:root {
+  --white200: #F5F5F5;
+  --green100: #03A84E;
+  --grey100: #0F241B;
+  --grey200: #1D352A;
+  --grey300: #4B6358;
+  --grey400: #F0F4F2;
+  --orange100: #FF9D00;
+  --white100: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: (var(--white200));
+  color: var(--grey100);
+  font-family: 'Cerebri Sans', serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
