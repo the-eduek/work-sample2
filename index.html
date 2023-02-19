@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eden Work Sample II || eduek</title>
   </head>
+
   <body>
     <section class="success-message">
       <div class="success-message-wrap">
@@ -219,12 +220,14 @@
         </div>
 
         <div class="order-details">
-          <h5>Delivery Address</h5>
-          <p>No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+          <div>
+            <h5>Delivery Address</h5>
+            <p>No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+          </div>
         </div>
 
         <ul class="order-status">
-          <li class="status">
+          <li class="status status--completed">
             <div class="status__title">
               <h3>Order has arrived</h3>
               <h5>10:56 AM</h5>
@@ -242,6 +245,77 @@
         </ul>
       </div>
     </section>
+
+    <section class="modal modal--cleaning">
+      <div class="modal-wrap">
+        <div class="modal__header">
+          <p>Mon, 08 Sep 2021</p>
+
+          <button class="btn">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.0625 10.9375L10.9375 3.06247" stroke="#0F241B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.0625 3.06247L10.9375 10.9375" stroke="#0F241B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+          </button>
+        </div>
+
+        <div class="order">
+          <div class="order__img" aria-hidden="true"></div>
+          
+          <div class="order__desc">
+            <h5>Order Status</h5>
+            <p>Order has arrived</p>
+          </div>
+        </div>
+
+        <div class="order-details">
+          <div>
+            <h5>Cleaning Address</h5>
+            <p>No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+          </div>
+
+          <div>
+            <h5>Cleaner</h5>
+            <p>Kelechi Oguike</p>
+          </div>
+        </div>
+
+        <ul class="order-status">
+          <li class="status">
+            <div class="status__title">
+              <h3>Cleaning completed</h3>
+              <h5>4:01 PM</h5>
+            </div>
+            <p class="status__message status__message--important">Give feedback.</p>
+          </li>
+
+          <li class="status">
+            <div class="status__title">
+              <h3>Cleaning started</h3>
+              <h5>2:35 PM</h5>
+            </div>
+            <p class="status__message">Your cleaner has started cleaning.</p>
+          </li>
+
+          <li class="status">
+            <div class="status__title">
+              <h3>Cleaner has arrived</h3>
+              <h5>2:26 PM</h5>
+            </div>
+            <p class="status__message">Your cleaner has arrived at your location.</p>
+          </li>
+
+          <li class="status">
+            <div class="status__title">
+              <h3>Cleaner en route</h3>
+              <h5>12:22 PM</h5>
+            </div>
+            <p class="status__message">Your cleaner is on the way to your location!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <script type="module" src="/app.js"></script>
   </body>
 </html>

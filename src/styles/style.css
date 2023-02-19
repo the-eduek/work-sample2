@@ -373,11 +373,11 @@ nav {
   font-weight: 500;
 }
 
-/* modals */
+/* modals, general styles */
 .modal {
   align-items: end;
   display: flex;
-  display: none;
+  /* display: none; */
   background-color: rgba(0, 0, 0, 0.15);
   left: 0;
   height: 100vh;
@@ -446,26 +446,64 @@ main.modal-active {
 .order-details {
   border: 1px dashed var(--grey500);
   border-radius: 0.5rem;
+}
+
+.order-details div {
+  padding: 0.75rem;
+}
+
+.order-details div:not(:last-of-type) {
+  border: 1px dashed var(--grey500);
+  border-width: 0 0 1px;
   padding: 0.75rem;
 }
 
 .order-details p {
-  padding: 0.125rem 0 0;
+  padding: 0.25rem 0 0;
   font-size: 0.875rem;
 }
 
 .order-status {
-  padding: 2rem 0 5.5rem;
+  padding: 2rem 0 0.75rem;
 }
 
 .status {
-  padding: 0 0 2.5rem 2.5rem;
   list-style: none;
+  padding: 0 0 0 2.5rem;
+  position: relative;
+}
+
+.status::after {
+  background-color: var(--white100);
+  background-image: url(../images/checkmark.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: flex;
+  height: 2rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2rem;
 }
 
 .status:not(:last-child) {
-  border: dashed var(--green300);
-  border-width: 0 0 0 1px;
+  margin: 0 0 2.5rem;
+}
+
+.status:not(:last-child)::before {
+  border-left: 1px dashed var(--green200);
+  content: "";
+  height: 100%;
+  left: 0.75rem;
+  position: absolute;
+  top: 2rem;
+  width: 1rem;
+}
+
+.status--completed::after {
+  background-image: url(../images/circles.svg);
+  left: 0.25rem;
+  top: 0.25rem;
 }
 
 .status__title {
@@ -491,7 +529,25 @@ main.modal-active {
   font-size: 0.875rem;
 }
 
-  /* modal, modal item = food */
+.status__message--important {
+  color: var(--green100);
+  font-weight: 500;
+}
+
+  /* modal, food status modal */
+.modal.modal.modal--food {
+  /* display: flex; */
+}
+
 .modal.modal--food .order__img {
   background-image: url(../images/pot.svg);
+}
+
+  /* modal, cleaning status modal */
+.modal.modal--cleaning {
+  display: none;
+}
+
+.modal.modal--cleaning .order__img {
+  background-image: url(../images/home.svg);
 }
