@@ -7,24 +7,193 @@
     <title>Vite App</title>
   </head>
   <body>
+    <section class="success-message">
+      <div class="success-message-wrap">
+        <div class="success-message__img">
+          <img src="./src/images/starry-eyes.svg" alt="">
+        </div>
+
+        <div class="success-message__desc">
+          <h3>Your Eden profile has been completed, Aderinsola!</h3>
+          <p>You’re one step closer to starting your easy life with Eden.</p>
+        </div>
+      </div>
+
+      <div class="success-message__btn">
+        <button class="btn">Go Home</button>
+      </div>
+    </section>
+
     <main>
-      <section class="success-message">
-        <div class="success-message-wrap">
-          <div class="success-message__img">
-            <img src="./src/images/starry-eyes.svg" alt="">
+      <header class="header">
+        <button class="header__btn btn">
+          <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.00038H13" stroke="#4B6358" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M1 6.00038H13" stroke="#4B6358" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M1 11.0004H13" stroke="#4B6358" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>            
+        </button>
+
+        <h1>Hi, Aderinsola!</h1>
+
+        <div class="avatar">
+          <img src="./src/images/avatar.svg" alt="user avatar">
+        </div>
+      </header>
+
+      <nav class="nav">
+        <a href="#" class="nav__option nav__option--active">Home</a>
+        <a href="#" class="nav__option">Upcoming</a>
+      </nav>
+
+      <section class="contact">
+        <a href="#">Tap here to call us</a>
+        <p>Do you have any inquiry about your meals? You can simply tap to call us.</p>
+
+        <span class="contact__img" aria-hidden=""></span>
+      </section>
+
+      <section class="service service--food">
+        <div class="service-wrap">
+          <div class="service__header">
+            <div class="service__title">
+              <h3>Food Delivery</h3>
+              <span class="service__title__icon" aria-hidden="true"></span>
+            </div>
+
+            <button class="service__btn btn">View Status
+              <span class="chevron">
+                <span>
+                  <svg width="12" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.22217 8.55554L4.77772 4.99999L1.22217 1.44443" stroke="currentColor" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+                </span>
+
+                <span>
+                  <svg width="12" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.22217 8.55554L4.77772 4.99999L1.22217 1.44443" stroke="currentColor" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+                </span>
+              </span>
+            </button>
           </div>
-  
-          <div class="success-message__desc">
-            <h3>Your Eden profile has been completed, Aderinsola!</h3>
-            <p>You’re one step closer to starting your easy life with Eden.</p>
+
+          <div class="service__desc">
+            <div class="service__desc__img">
+              <img src="./src/images/food.png" alt="image of french fries and barbequed turkey wings">
+            </div>
+
+            <div>
+              <p>French Fries with</p>
+              <p>BBQ Turkey Wings & Coleslaw</p>
+            </div>
           </div>
         </div>
 
-        <div class="success-message__btn">
-          <button class="btn">Go Home</button>
+        <div class="service__time">
+          <div class="service__time__icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 8C1 9.85652 1.7375 11.637 3.05025 12.9497C4.36301 14.2625 6.14348 15 8 15C9.85652 15 11.637 14.2625 12.9497 12.9497C14.2625 11.637 15 9.85652 15 8C15 6.14348 14.2625 4.36301 12.9497 3.05025C11.637 1.7375 9.85652 1 8 1C6.14348 1 4.36301 1.7375 3.05025 3.05025C1.7375 4.36301 1 6.14348 1 8V8Z" stroke="#1D352A" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 8V5.5" stroke="#1D352A" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 8L11.1247 11.1253" stroke="#1D352A" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <p>10:00 AM - 11:30 AM</p>
         </div>
       </section>
+
+      <section class="service service--cleaning">
+        <div class="service-wrap">
+          <div class="service__header">
+            <div class="service__title">
+              <h3>Home Cleaning</h3>
+              <span class="service__title__icon" aria-hidden="true"></span>
+            </div>
+
+            <button class="service__btn btn">View Status
+              <span class="chevron">
+                <span>
+                  <svg width="12" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.22217 8.55554L4.77772 4.99999L1.22217 1.44443" stroke="currentColor" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+                </span>
+
+                <span>
+                  <svg width="12" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.22217 8.55554L4.77772 4.99999L1.22217 1.44443" stroke="currentColor" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                    
+                </span>
+              </span>
+            </button>
+          </div>
+
+          <div class="service__desc">
+            <p>Get ready; our cleaner is coming to get your house pampered.</p>
+          </div>
+        </div>
+
+        <div class="service__time">
+          <div class="service__time__icon">
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 8C1 9.85652 1.7375 11.637 3.05025 12.9497C4.36301 14.2625 6.14348 15 8 15C9.85652 15 11.637 14.2625 12.9497 12.9497C14.2625 11.637 15 9.85652 15 8C15 6.14348 14.2625 4.36301 12.9497 3.05025C11.637 1.7375 9.85652 1 8 1C6.14348 1 4.36301 1.7375 3.05025 3.05025C1.7375 4.36301 1 6.14348 1 8V8Z" stroke="#1D352A" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 8V5.5" stroke="#1D352A" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 8L11.1247 11.1253" stroke="#1D352A" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <p>10:00 AM - 11:30 AM</p>
+        </div>
+      </section>
+
+      <footer class="menu">
+        <button class="menu__option menu__option--active btn">
+          <div>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.81494 10.4579V16.6454H7.31494V12.1454C7.31494 11.847 7.43347 11.5609 7.64445 11.3499C7.85543 11.1389 8.14157 11.0204 8.43994 11.0204H9.56494C9.86331 11.0204 10.1495 11.1389 10.3604 11.3499C10.5714 11.5609 10.6899 11.847 10.6899 12.1454V16.6454H15.1899V10.4579" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.564941 9.3329L8.20669 1.69115C8.31117 1.58661 8.43522 1.50368 8.57176 1.44709C8.70829 1.39051 8.85464 1.36139 9.00244 1.36139C9.15024 1.36139 9.29659 1.39051 9.43313 1.44709C9.56967 1.50368 9.69372 1.58661 9.79819 1.69115L17.4399 9.3329" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+          </div>
+
+          <p>Home</p>
+        </button>
+
+        <button class="menu__option btn">
+          <div>
+            <svg width="18" height="18" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.125 15.5C11.5713 15.5 12.9851 15.0711 14.1876 14.2676C15.3901 13.4641 16.3274 12.3221 16.8809 10.9859C17.4343 9.64969 17.5791 8.17939 17.297 6.7609C17.0148 5.34242 16.3184 4.03946 15.2957 3.01678C14.273 1.99411 12.9701 1.29767 11.5516 1.01551C10.1331 0.733357 8.66281 0.878168 7.32663 1.43163C5.99044 1.9851 4.84839 2.92236 4.04488 4.1249C3.24137 5.32743 2.8125 6.74123 2.8125 8.1875V8.75" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M0.5625 6.49762L2.8125 8.74762L5.0625 6.49762" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.5625 3.68512V8.74762H13.5" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+          </div>
+
+          <p>History</p>
+        </button>
+
+        <button class="menu__option btn">
+          <div>
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.6499 15.5812C5.73564 15.8733 5.91367 16.1297 6.15734 16.3122C6.401 16.4946 6.6972 16.5932 7.00159 16.5932C7.30598 16.5932 7.60218 16.4946 7.84584 16.3122C8.08951 16.1297 8.26754 15.8733 8.35328 15.5812" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 2.925V1.40625" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.9998 2.92499C8.34246 2.92499 9.63013 3.45836 10.5795 4.40776C11.5289 5.35716 12.0623 6.64483 12.0623 7.98749C12.0623 12.7435 13.0748 13.5562 13.0748 13.5562H0.924805C0.924805 13.5562 1.9373 12.2629 1.9373 7.98749C1.9373 6.64483 2.47067 5.35716 3.42008 4.40776C4.36948 3.45836 5.65715 2.92499 6.9998 2.92499V2.92499Z" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                         
+          </div>
+
+          <p>Notifications</p>
+        </button>
+
+        <button class="menu__option btn">
+          <div>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.50625 1.40626C8.24319 1.40444 7.00265 1.74066 5.91338 2.38004C4.8241 3.01942 3.92578 3.93866 3.31164 5.04236C2.69749 6.14606 2.3899 7.394 2.42079 8.65668C2.45167 9.91937 2.8199 11.1508 3.48727 12.2231L1.40625 16.5938L5.7762 14.5127C6.70817 15.0922 7.76197 15.4473 8.85457 15.5501C9.94717 15.6529 11.0487 15.5006 12.0724 15.1051C13.0961 14.7096 14.014 14.0819 14.7537 13.2713C15.4935 12.4606 16.0349 11.4893 16.3353 10.4338C16.6357 9.37828 16.6868 8.26743 16.4848 7.18877C16.2827 6.11011 15.8329 5.09311 15.1709 4.2179C14.5088 3.34268 13.6525 2.63317 12.6695 2.14526C11.6865 1.65735 10.6037 1.40437 9.50625 1.40626V1.40626Z" stroke="currentColor" stroke-width="1.12" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <p>Gardener</p>
+        </button>
+      </footer>
     </main>
+
     <script type="module" src="/app.js"></script>
   </body>
 </html>

@@ -1,9 +1,14 @@
+/* profile completion modal */
 .success-message {
-  display: flex;
+  background-color: var(--white200);
+  display: none;
+  /* display: flex; */
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
   padding: 0 1.5rem 5.125rem;
+  position: fixed;
+  z-index: 10;
 }
 
 .success-message-wrap {
@@ -29,7 +34,6 @@
 
 .success-message__desc p {
   color: var(--grey200);
-  line-height: 1.5;
 }
 
 .success-message__btn {
@@ -45,6 +49,320 @@
   font-size: 1rem;
   font-family: inherit;
   font-weight: 400;
-  padding: 0.75rem 1rem;
+  padding: 0.875rem;
   width: 100%;
+}
+
+/* home screen */
+main {
+  padding: 2rem 1.5rem;
+}
+
+  /* header section */
+header {
+  align-items: center;
+  display: flex;
+  padding: 1.5rem 0;
+}
+
+.header__btn {
+  align-items: center;
+  border: 1px solid var(--grey600);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  justify-content: center;
+  margin: 0 1rem 0 0;
+  width: 2rem
+}
+
+.header h1 {
+  font-family: 'PT Serif', serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.header .avatar {
+  align-items: center;
+  background-color: var(--orange700);
+  border-radius: 50%;
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  margin: 0 0 0 auto;
+  width: 2.5rem;
+}
+
+  /* nav section */
+nav {
+  border-radius: 0.5rem;
+  background-color: var(--grey700);
+  display: flex;
+  padding: 0.25rem;
+}
+
+.nav__option {
+  color: var(--grey300);
+  display: inline-block;
+  font-size: 0.875rem;
+  padding: 0.34375rem;
+  text-align: center;
+  width: 50%;
+}
+
+.nav__option.nav__option--active {
+  background-color: var(--white100);
+  border-radius: 0.5rem;
+  color: var(--grey100);
+  font-weight: 500;
+}
+
+  /* contact section */
+.contact {
+  background-color: var(--green100);
+  border: 0.25rem solid #98dcaf;
+  border-radius: 0.5rem;
+  color: var(--white100);
+  margin: 1.5rem 0;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 1rem 1.25rem;
+}
+
+.contact a {
+  display: inline-block;
+  font-weight: 500;
+  padding: 0 0 0.25rem;
+}
+
+.contact p {
+  font-size: 0.875rem;
+  width: 80%
+}
+
+.contact__img {
+  background-color: var(--green100);
+  background-image: url(../images/pot.svg);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -2rem;
+  height: 5rem;
+  position: absolute;
+  right: -1.25rem;
+  width: 5rem;
+}
+
+  /* service item general styles */
+.service {
+  border-radius: 0.5rem;
+  margin: 0 0 1.5rem;
+  padding: 0 1rem;
+}
+
+.service-wrap {
+  padding: 1rem 0;
+}
+
+.service__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 1rem;
+}
+
+.service__title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__title h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 0.75rem 0 0;
+}
+
+.service__title__icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.service__btn {
+  align-items: center;
+  border-radius: 6.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.375rem;
+}
+
+.service__btn:hover .chevron span {
+  transform: translateX(25%);
+}
+
+.service__btn .chevron {
+  display: flex;
+  overflow: hidden;
+  width: 1rem;
+}
+
+.service__btn .chevron span {
+  display: flex;
+  transition: all 200ms ease-in;
+  transform: translateX(-90%);
+}
+
+.service__time {
+  align-items: center;
+  border-style: solid;
+  border-width: 1px 0 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.625rem 0;
+}
+
+.service__time p {
+  font-size: 0.75rem;
+  color: var(--grey200);
+}
+
+.service__time__icon {
+  display: flex;
+  height: 1rem;
+  margin: 0 0.5rem 0 0;
+  width: 1rem;
+}
+
+.service__time__icon svg {
+  height: 100%;
+  width: 100%;
+}
+
+  /* service item, item = food */
+.service.service--food {
+  background-color: var(--green800);
+  box-shadow: inset 1px 1px 0px var(--green100), inset -1px -1px 0px var(--green100);
+}
+
+.service.service--food .service__title h3 {
+  color: var(--green100);
+}
+
+.service.service--food .service__title__icon {
+  background-image: url(../images/pot.svg);
+}
+
+.service.service--food .service__btn {
+  color: var(--green100);
+  background-color: var(--green700);
+}
+
+.service.service--food .service__desc {
+  align-items: center;
+  display: flex;
+  padding: 0.5rem 0 0;
+}
+
+.service.service--food .service__desc__img {
+  border-radius: 0.5rem;
+  height: 4.5rem;
+  overflow: hidden;
+  margin: 0 1rem 0 0;
+  width: 4.5rem;
+}
+
+.service.service--food .service__desc__img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.service.service--food .service__desc p:first-child {
+  color: var(--grey300);
+  font-size: 0.875rem;
+  padding: 0 0 0.25rem;
+}
+
+.service.service--food .service__desc p:nth-child(2) {
+  color: var(--grey100);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.service.service--food .service__time {
+  border-color: #BDEECD80;
+}
+
+  /* service item, item = cleaning */
+.service.service--cleaning {
+  background-color: var(--orange800);
+  box-shadow: inset 1px 1px 0px var(--orange300), inset -1px -1px 0px var(--orange300);
+}
+
+.service.service--cleaning .service__title h3 {
+  color: var(--orange100);
+}
+
+.service.service--cleaning .service__title__icon {
+  background-image: url(../images/home.svg);
+}
+
+.service.service--cleaning .service__btn {
+  color: var(--orange100);
+  background-color: var(--orange700);
+}
+
+.service.service--cleaning .service__desc p {
+  color: var(--black100);
+  font-size: 0.875rem;
+}
+
+.service.service--cleaning .service__time {
+  border-color: #FFDA9F80;
+}
+
+  /* footer menu */
+.menu {
+  background-color: var(--white100);
+  box-shadow: inset 0px 1px 0px #F1F4F2;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 0.625rem 2rem 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.menu__option {
+  align-items: center;
+  color: var(--grey400);
+  flex-direction: column;
+}
+
+.menu__option div {
+  height: 1.125rem;
+  width: 1.125rem;
+}
+
+.menu__option div svg {
+  height: 100%;
+  width: 100%;
+}
+
+.menu__option p {
+  font-size: 0.75rem;
+  padding: 0.375rem 0 0;
+}
+
+.menu__option.menu__option--active {
+  color: var(--green100);
+}
+
+.menu__option.menu__option--active p {
+  font-weight: 500;
 }

@@ -1,14 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@font-face {
+  font-display: swap;
+  font-family: 'Cerebri Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Cerebri-Sans-Regular.woff2) format('woff2'), url(../fonts/Cerebri-Sans-Regular.woff2) format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Cerebri Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Cerebri-Sans-Medium.woff2) format('woff2'), url(../fonts/Cerebri-Sans-Medium.woff2) format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/PT-Serif-Bold.woff2) format('woff2'), url(../fonts/PT-Serif-Bold.woff2) format('woff');
+}
 
 :root {
-  --white200: #F5F5F5;
+  --black100: #000000;
   --green100: #03A84E;
+  --green200: #14B757;
+  --green300: #6ECE8A;
+  --green700: #E9FBF2;
+  --green800: #F6FFFA;
   --grey100: #0F241B;
   --grey200: #1D352A;
   --grey300: #4B6358;
-  --grey400: #F0F4F2;
+  --grey400: #8AA398;
+  --grey600: #E2E9E6;
+  --grey700: #F0F4F2;
   --orange100: #FF9D00;
+  --orange300: #FFC260;
+  --orange700: #FFF3DF;
+  --orange800: #FFFBF5;
   --white100: #FFFFFF;
+  --white200: #F5F5F5;
 }
 
 * {
@@ -18,12 +50,14 @@
 }
 
 body {
-  background-color: (var(--white200));
+  background-color: var(--white100);
   color: var(--grey100);
   font-family: 'Cerebri Sans', serif;
+  font-weight: 400;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-synthesis: none;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
 }
@@ -31,4 +65,15 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.btn {
+  appearance: none;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  outline: none;
 }
