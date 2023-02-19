@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <section class="success-message">
+    <section class="success-message" aria-modal="true" data-success-modal>
       <div class="success-message-wrap">
         <div class="success-message__img">
           <img src="./src/images/starry-eyes.svg" alt="">
@@ -23,11 +23,11 @@
       </div>
 
       <div class="success-message__btn">
-        <button class="btn">Go Home</button>
+        <button class="btn" data-profile-btn>Go Home</button>
       </div>
     </section>
 
-    <main class="modal-active">
+    <main>
       <header class="header">
         <button class="header__btn btn">
           <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@
               <span class="service__title__icon" aria-hidden="true"></span>
             </div>
 
-            <button class="service__btn btn">View Status
+            <button class="service__btn btn" data-food-btn>View Status
               <span class="chevron">
                 <span>
                   <svg width="12" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -114,7 +114,7 @@
               <span class="service__title__icon" aria-hidden="true"></span>
             </div>
 
-            <button class="service__btn btn">View Status
+            <button class="service__btn btn" data-cleaning-btn>View Status
               <span class="chevron">
                 <span>
                   <svg width="12" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -197,12 +197,12 @@
       </footer>
     </main>
 
-    <section class="modal modal--food">
+    <section class="modal modal--food" aria-modal="true" data-food-modal>
       <div class="modal-wrap">
         <div class="modal__header">
           <p>Mon, 08 Sep 2021</p>
 
-          <button class="btn">
+          <button class="btn" data-close-food>
             <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.0625 10.9375L10.9375 3.06247" stroke="#0F241B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M3.0625 3.06247L10.9375 10.9375" stroke="#0F241B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -246,12 +246,12 @@
       </div>
     </section>
 
-    <section class="modal modal--cleaning">
+    <section class="modal modal--cleaning" aria-modal="true" data-cleaning-modal>
       <div class="modal-wrap">
         <div class="modal__header">
           <p>Mon, 08 Sep 2021</p>
 
-          <button class="btn">
+          <button class="btn" data-close-cleaning>
             <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.0625 10.9375L10.9375 3.06247" stroke="#0F241B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M3.0625 3.06247L10.9375 10.9375" stroke="#0F241B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -316,6 +316,7 @@
       </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script type="module" src="/app.js"></script>
   </body>
 </html>
