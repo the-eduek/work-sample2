@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/styles/globals.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Eden Work Sample II || eduek</title>
   </head>
   <body>
     <section class="success-message">
@@ -24,7 +26,7 @@
       </div>
     </section>
 
-    <main>
+    <main class="modal-active">
       <header class="header">
         <button class="header__btn btn">
           <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -194,6 +196,52 @@
       </footer>
     </main>
 
+    <section class="modal modal--food">
+      <div class="modal-wrap">
+        <div class="modal__header">
+          <p>Mon, 08 Sep 2021</p>
+
+          <button class="btn">
+            <svg width="16" height="16" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.0625 10.9375L10.9375 3.06247" stroke="#0F241B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3.0625 3.06247L10.9375 10.9375" stroke="#0F241B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+          </button>
+        </div>
+
+        <div class="order">
+          <div class="order__img" aria-hidden="true"></div>
+          
+          <div class="order__desc">
+            <h5>Order Status</h5>
+            <p>Order has arrived</p>
+          </div>
+        </div>
+
+        <div class="order-details">
+          <h5>Delivery Address</h5>
+          <p>No 6B, Radiators Spring, Lightning Estate, Lagos, Nigeria.</p>
+        </div>
+
+        <ul class="order-status">
+          <li class="status">
+            <div class="status__title">
+              <h3>Order has arrived</h3>
+              <h5>10:56 AM</h5>
+            </div>
+            <p class="status__message">Your order has arrived at your location. Pick it up!</p>
+          </li>
+
+          <li class="status">
+            <div class="status__title">
+              <h3>Order on the way</h3>
+              <h5>9:14 AM</h5>
+            </div>
+            <p class="status__message">Your order has been dispatched and is on the way to you.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
     <script type="module" src="/app.js"></script>
   </body>
 </html>
