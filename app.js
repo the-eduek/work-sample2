@@ -5,19 +5,16 @@ confetti({
   origin: { y: 0.6 }
 });
 
-  // close modal
-function closeModal(modal, className) {
-  modal.classList.add(className);
-};
-
+  // close success message modal
 const profileBtn = document.querySelector('[data-profile-btn]');
 const profileModal = document.querySelector('[data-success-modal]');
 
-profileBtn.addEventListener('click', () => {
-  console.log("hello")
-  closeModal(profileModal, 'success-message--fade')
-});
+function closeModal(modal, className) {
+  profileModal.classList.add('success-message--fade');
+  profileBtn.removeEventListener('click', closeModal)
+};
 
+profileBtn.addEventListener('click', closeModal);
 
   // show / close order status modals
 const cleaningModal = document.querySelector('[data-cleaning-modal]');
