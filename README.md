@@ -8,6 +8,8 @@
 
 This repo contains my solution to [the Eden work sample](https://edenlife.notion.site/Eden-Frontend-Engineer-Interview-Exercise-Stage-2-Mid-level-464c8e7827134420826603ec8f34d177). 
 
+[Figma design](https://www.figma.com/file/9rss1i3NzevnGg4LU2jJ9f/Work-Samples?node-id=2%3A1919&t=i8CP1wJYdFfwuuSK-0)
+
 
 ### Features
 - It looks exactly like the design specification.
@@ -23,6 +25,8 @@ This repo contains my solution to [the Eden work sample](https://edenlife.notion
 - Clicking on the `View Status` button of the food delivery component opens the corresponding modal (implemention of screen 10).
 
 - Clicking on the `View Status` button of the cleaning component opens the corresponding modal (implemention of screen 11).
+
+- Modals also close with the `esc` key.
 
 - There is a transition that plays when each of the modals come into view.
 
