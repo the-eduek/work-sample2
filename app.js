@@ -1,10 +1,3 @@
-  // confetti, from the js confetti package
-confetti({
-  particleCount: 100,
-  spread: 70,
-  origin: { y: 0.6 }
-});
-
   // close success message modal
 const profileBtn = document.querySelector('[data-profile-btn]');
 const profileModal = document.querySelector('[data-success-modal]');
@@ -44,4 +37,11 @@ foodModalBtn.addEventListener('click', () => {
 foodModalCloseBtn.addEventListener('click', () => {
   foodModal.classList.remove('modal--visible');
   contentArea.classList.remove('modal-active');
+});
+
+  // confetti, from the js confetti package
+confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: 0.6 }
 });
