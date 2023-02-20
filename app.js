@@ -39,6 +39,14 @@ foodModalCloseBtn.addEventListener('click', () => {
   contentArea.classList.remove('modal-active');
 });
 
+window.addEventListener("keyup", (e) => {
+  if (e.key === "Escape") {
+    contentArea.classList.remove('modal-active');
+    if (cleaningModal.classList.contains('modal--visible')) cleaningModal.classList.remove('modal--visible');
+    else if (foodModal.classList.contains('modal--visible')) foodModal.classList.remove('modal--visible');
+  }
+});
+
   // confetti, from the js confetti package
 confetti({
   particleCount: 100,

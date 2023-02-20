@@ -569,6 +569,10 @@ nav {
   background-image: url(../images/pot.svg);
 }
 
+.modal.modal--food .order-status {
+  padding: 2rem 0 8rem;
+}
+
   /* modal, cleaning status modal */
 .modal.modal--cleaning .order__img {
   background-image: url(../images/home.svg);
