@@ -4,7 +4,7 @@
 
 **Stack**: HTML, CSS, JS.
 
-**Demo**: [theedendogs.netlify.app](https://theedendogs.netlify.app).
+**Demo**: [edenworksample2.netlify.app](https://edenworksample2.netlify.app/).
 
 This repo contains my solution to [the Eden work sample](https://edenlife.notion.site/Eden-Frontend-Engineer-Interview-Exercise-Stage-2-Mid-level-464c8e7827134420826603ec8f34d177). 
 
