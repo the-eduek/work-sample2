@@ -12,7 +12,9 @@ This repo contains my solution to [the Eden work sample](https://edenlife.notion
 ### Features
 - It looks exactly like the design specification.
 
-- The page is usable, responsive.
+- The page is usuable, snappy - I achieved this by compressing asset images, e.g the image on th food delivery components.
+
+- The page is responsive.
 
 - There's is a confetti on app load (implementation of screen 8).
 
@@ -22,7 +24,7 @@ This repo contains my solution to [the Eden work sample](https://edenlife.notion
 
 - Clicking on the `View Status` button of the cleaning component opens the corresponding modal (implemention of screen 11).
 
-- Users are be able to search for a dog breed with a search box and dog breeds that match the search criteria are displayed.
+- There is a transition that plays when each of the modals come into view.
 
 - This is created using only HTML, CSS and JS.
 
